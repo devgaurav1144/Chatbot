@@ -1,17 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <h1 className='bg-cyan-50 text-5xl'>React this Working</h1>
+      <div className='grid grid-cols-5 h-screen text-center'>
+        <div className="col-span-1 h-screen bg-zinc-800">
+          <h5>Hello</h5>
+        </div>
+        <div className="col-span-4">
+          <div className="container h-200">
+
+          </div>
+          <div className='bg-zinc-800 w-1/2 p-1 pr-5 text-white m-auto rounded-4xl border border-zinc-700 flex h-16'>
+            <input type="text" className='w-full h-full p-4 outline-none' placeholder='Ask Me AnyThing' />
+            <button>ASK</button>
+          </div>
+        </div>
       </div>
-    
+
     </>
   )
 }
